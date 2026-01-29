@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | DevConf 2026</title>
+</head>
+<body>
+
+<header>
+  <h1>Register for DevConf 2026</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<form action="#" method="POST">
+
+<!-- Personal Information -->
+<fieldset>
+  <legend>Personal Information</legend>
+
+  <label>First Name:
+    <input type="text" required>
+  </label><br><br>
+
+  <label>Last Name:
+    <input type="text" required>
+  </label><br><br>
+
+  <label>Email:
+    <input type="email" required>
+  </label><br><br>
+
+  <label>Phone:
+    <input type="tel">
+  </label><br><br>
+
+  <label>Date of Birth:
+    <input type="date">
+  </label>
+</fieldset>
+
+<!-- Professional Details -->
+<fieldset>
+  <legend>Professional Details</legend>
+
+  <label>Job Title:
+    <input type="text">
+  </label><br><br>
+
+  <label>Company / Organization:
+    <input type="text">
+  </label><br><br>
+
+  <label>Years of Experience:
+    <input type="number" min="0" max="50">
+  </label>
+</fieldset>
+
+<!-- Preferences -->
+<fieldset>
+  <legend>Conference Preferences</legend>
+
+  Attendance Type:<br>
+  <input type="radio" name="attendance"> In-Person
+  <input type="radio" name="attendance"> Virtual
+  <input type="radio" name="attendance"> Hybrid
+  <br><br>
+
+  T-Shirt Size:
+  <select>
+    <option>S</option><option>M</option><option>L</option>
+    <option>XL</option><option>XXL</option>
+  </select><br><br>
+
+  Dietary Requirements:<br>
+  <textarea maxlength="500"></textarea>
+</fieldset>
+
+<!-- Agreement -->
+<fieldset>
+  <legend>Confirmation</legend>
+  <input type="checkbox" required> I agree to the Terms & Conditions<br>
+  <input type="checkbox"> Subscribe to newsletter
+</fieldset>
+
+<br>
+<button type="submit">Submit Registration</button>
+<button type="reset">Reset</button>
+
+</form>
+
+</main>
+
+<footer>
+  <p>© 2026 DevConf</p>
+</footer>
+
+</body>
+</html>
