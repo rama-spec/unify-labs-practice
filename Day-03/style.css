@@ -1,0 +1,277 @@
+/* ==========================================
+   DEVCONF 2026 - GLOBAL STYLESHEET
+   Author: Pudathu Rama Krishna
+   ========================================== */
+
+/* ==========================================
+   1. CSS RESET (Simple Normalize)
+   ========================================== */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Required */
+}
+
+/* Remove default list styles */
+ul {
+    list-style: none;
+}
+
+/* Remove default link underline */
+a {
+    text-decoration: none;
+}
+
+/* ==========================================
+   2. COLOR PALETTE
+   ========================================== */
+
+:root {
+    --primary: #1E3A8A;       /* Deep Blue */
+    --secondary: #2563EB;     /* Bright Blue */
+    --accent: #06B6D4;        /* Cyan */
+    --dark: #0F172A;          /* Dark Navy */
+    --light: #F8FAFC;         /* Light Gray */
+    --gray: #64748B;          /* Neutral Gray */
+}
+
+/* ==========================================
+   3. BODY & TYPOGRAPHY
+   ========================================== */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* Headings using Inter */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* ==========================================
+   4. CONTAINER
+   ========================================== */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+/* ==========================================
+   5. NAVIGATION
+   ========================================== */
+
+nav {
+    background-color: var(--dark);
+    padding: 1rem 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Hover state (Required) */
+nav a:hover {
+    color: var(--accent);
+}
+
+/* ==========================================
+   6. HERO SECTION
+   ========================================== */
+
+.hero {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    color: white;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* ==========================================
+   7. BUTTONS
+   ========================================== */
+
+.btn {
+    display: inline-block;
+    background-color: var(--accent);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: var(--secondary);
+    transform: translateY(-3px);
+}
+
+/* ==========================================
+   8. CARDS (Speakers / Sections)
+   ========================================== */
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* ==========================================
+   9. FORMS (Register & Contact)
+   ========================================== */
+
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--secondary);
+}
+
+/* ==========================================
+   10. FOOTER
+   ========================================== */
+
+footer {
+    background-color: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+/* ==========================================
+   11. UTILITIES
+   ========================================== */
+
+.text-center {
+    text-align: center;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+/* ==========================================
+   12. RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+    }
+}
